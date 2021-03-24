@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw Outline</title>
+	<link rel="stylesheet" href="draw.css">
+</head> 
+
+<body> 
+	<div class="app">
+		<div class="title">Auto Outline</div>
+		<form action="/upload" method="POST" enctype="multipart/form-data">
+			<input type="file" name="image">
+			<input class="start-btn" type="submit" value="Start ">
+		</form>
+		<div class="color">
+			<label for="pen-color" style="padding-top: 5px; margin-right: 10px;">Color</label>
+			<input type="color" name="pen-color" id="pen-color" value="Color">
+		</div>
+		<div class="size">
+			<label for="pen-size">Size</label>
+			<input type="range" name="pen-size" id="pen-size" min="1" max="5">
+		</div>
+		<div class="actions">
+			<button class="clear-btn" onclick="clear_canvas()">Clear</button>
+			<button class="save-btn" onclick="save_canvas()">Save ↓</button>
+		</div>
+	</div>
+	<hr> 
+	<canvas id="canvas"></canvas> 
+	<script src="./draw.js"></script> 
+</body> 
+
+</html> 
