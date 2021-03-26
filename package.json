@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "auto image outline drawing app",
   "dependencies": {
     "adaptive-quadratic-curve": "^1.0.2",
     "cheerio": "^1.0.0-rc.5",
@@ -18,5 +18,8 @@
     "potrace": "^2.1.8",
     "robotjs": "^0.6.0",
     "svg-pathdata": "^5.0.5"
+  },
+  "engines": {
+    "node": "13.x"
   }
 }
