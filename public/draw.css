@@ -72,7 +72,3 @@ button, input[type="submit"], input[type="file"] {
   background-color: #4CAF50;
   color: white;
 }
-
-canvas {
-  cursor: url('iconfinder_15.Pencil_290135.ico'), default;
-}
